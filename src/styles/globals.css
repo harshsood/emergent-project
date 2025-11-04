@@ -1,0 +1,32 @@
+/* Education-themed palette:
+   - primary: calming indigo-teal for trust and clarity
+   - accent: warm golden for CTAs/highlight
+   - background: very light blue tint
+*/
+:root{
+  --color-primary: #0f6b9c;             /* deep teal/indigo */
+  --color-primary-foreground: #ffffff;  /* text on primary */
+  --color-accent: #ffb020;              /* warm golden accent */
+  --color-background: #f6fbff;          /* very light blue */
+  --color-card: #ffffff;                /* white cards */
+  --color-border: #e6f0fb;              /* subtle blue border */
+  --color-muted-foreground: #6b7280;    /* muted text */
+  --color-success: #16a34a;
+  --color-danger: #ef4444;
+}
+
+/* Small utilities to improve contrast of CTAs */
+.btn-primary{
+  background-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+.btn-accent{
+  background-color: var(--color-accent);
+  color: #111827;
+}
+
+/* optional: gentle link hover */
+a {
+  color: var(--color-primary);
+}
+a:hover { color: var(--color-accent); }
